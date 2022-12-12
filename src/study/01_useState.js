@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react'
-import Button from './Button'
-import styles from './App.module.css'
+import Button from '../Button'
+import styles from '../App.module.css'
 
 function useState() {
   // 리액트는 새로운 UI 요소가 추가될 때 마다 화면을 새로고침(refresh)한다.
@@ -33,13 +33,13 @@ function useState() {
         type="text"
         placeholder="Search here.."
         value={keyword}
-        onChange={onChange} />
+        onChange={onChange}/>
 
       <h1 className={styles.title}>{counter}</h1>
-      <Button text={"Component button"}/>
+      <Button text={'Component button'}/>
       <button onClick={onClick}>Counter</button>
     </div>
-  );
+  )
 }
 
-export default useState;
+export default useState
