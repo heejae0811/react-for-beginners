@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react'
-import Button from '../Button'
-import styles from '../App.module.css'
+import Button from '../component/Button'
+import styles from '../css/App.module.css'
 
 function useState() {
   // 리액트는 새로운 UI 요소가 추가될 때 마다 화면을 새로고침(refresh)한다.

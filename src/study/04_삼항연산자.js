@@ -24,7 +24,7 @@ function TrueFalse() {
 
       <ul>
         {
-          coins.map((item, index) => <li>{item.name} ({item.symbol} : ${item.quotes.USD.price})</li>)
+          coins.map((item) => <li>{item.name} ({item.symbol} : ${item.quotes.USD.price})</li>)
         }
       </ul>
     </div>
