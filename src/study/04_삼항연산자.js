@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react'
 
-function App() {
+function TrueFalse() {
   const [loading, setLoading] = useState(true)
   const [coins, setCoins] = useState([])
 
@@ -17,6 +17,7 @@ function App() {
     <div>
       <h1>The Coins! ({coins.length})</h1>
 
+      {/*삼항연산자를 사용해서 Loading를 보여준다.*/}
       {
         loading ? <strong>Loading...</strong> : null
       }
@@ -30,4 +31,4 @@ function App() {
   )
 }
 
-export default App
+export default TrueFalse

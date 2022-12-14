@@ -17,7 +17,8 @@ function useState() {
 
   console.log('I run all the time.')
 
-  // useEffect는 페이지가 렌더링 된 후 딱 1번만 실행된다.
+  // useEffect가 빈 배열이면 페이지가 렌더링 된 후 딱 1번만 실행된다.
+  // 배열에 값이 있으면 값이 바뀔 때 마다 실행된다.
   useEffect(() => {
     console.log('I run only once.')
   }, [])
