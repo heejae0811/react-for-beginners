@@ -1,6 +1,6 @@
 import {useState} from 'react'
 
-function App() {
+function ToDos() {
   const [toDo, setToDo] = useState('')
   const [toDos, setToDos] = useState([])
 
@@ -46,4 +46,4 @@ function App() {
   )
 }
 
-export default App
+export default ToDos
