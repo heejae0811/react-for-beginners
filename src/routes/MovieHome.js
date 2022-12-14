@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react'
 import Movie from './../component/Movie'
 
-function Home() {
+function MovieHome() {
   const [loading, setLoading] = useState(true)
   const [movies, setMovies] = useState([])
 
@@ -12,8 +12,8 @@ function Home() {
       )
     ).json()
 
-    setMovies(json.data.movies)
     setLoading(false)
+    setMovies(json.data.movies)
   }
 
   useEffect(() => {
@@ -25,7 +25,7 @@ function Home() {
   return (
     <div>
       {
-        loading ? <h1>Loading...</h1> : movies.map((item) =>
+        loading ? <h1>Loading..</h1> : movies.map((item) =>
           <Movie
             key={item.id}
             id={item.id}
@@ -40,4 +40,4 @@ function Home() {
   )
 }
 
-export default Home
+export default MovieHome

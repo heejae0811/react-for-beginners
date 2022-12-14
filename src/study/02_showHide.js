@@ -2,6 +2,7 @@ import {useState, useEffect} from 'react'
 
 function showHide() {
   const [showing, setShowing] = useState(false)
+
   const onClick = () => {
     setShowing((prev) => !prev)
   }
@@ -10,12 +11,17 @@ function showHide() {
     useEffect(() => {
       console.log('Created!')
     }, [])
-    return <h1>Hello</h1>
+
+    return (
+      <h1>Hello</h1>
+    )
   }
 
   return (
     <div>
-      {showing ? <Hello/> : null}
+      {
+        showing ? <Hello/> : null
+      }
       <button onClick={onClick}>{showing ? 'Hide' : 'Show'}</button>
     </div>
   )
