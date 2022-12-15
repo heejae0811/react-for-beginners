@@ -7,7 +7,8 @@ function Movie({id, coverImg, title, summary, genres}) {
       <Link to={`/movie/${id}`}>
         <h2>{title}</h2>
       </Link>
-      <p>{summary}</p>
+      {/* 삼항연산자와 slice를 사용해서 글자 길이가 100보다 크면 글자 자르기 */}
+      <p>{summary.length > 100 ? `${summary.slice(0, 100)}...` : summary}</p>
       <img src={coverImg} alt={title}/>
       <ul>
         {
